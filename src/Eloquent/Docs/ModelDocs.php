@@ -64,7 +64,7 @@ use PDPhilip\Elasticsearch\Query\Builder;
  * @method static bool chunk(mixed $count, callable $callback, string $keepAlive = '5m')
  * @method static bool chunkById(mixed $count, callable $callback, $column = '_id', $alias = null, $keepAlive = '5m')
  * @method static $this queryNested(string $column, Callable $callback)
- * @method static array rawSearch(array $bodyParams, bool $returnRaw = false)
+ * @method static ElasticCollection rawSearch(array $bodyParams, bool $returnRaw = false)
  * @method static array rawAggregation(array $bodyParams)
  * @method static $this highlight(array $fields = [], string|array $preTag = '<em>', string|array $postTag = '</em>', $globalOptions = [])
  * @method static bool deleteIndexIfExists()
