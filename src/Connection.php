@@ -288,8 +288,10 @@ class Connection extends BaseConnection
                 'password' => null,
                 'api_key' => null,
                 'api_id' => null,
-                'index_prefix' => null,
+                'index_prefix' => '',
                 'options' => [
+                    'perform_unsafe_queries' => false, // This skips the safety checks for Elastic Specific queries.
+                    'insert_chunk_size' => 1000, // This is the maximum insert chunk size to use when bulk inserting
                     'logging' => false,
                     'allow_id_sort' => false,
                     'ssl_verification' => true,
